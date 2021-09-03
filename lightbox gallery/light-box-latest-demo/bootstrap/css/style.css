@@ -1,0 +1,182 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*----------------- lightbox-gallery css ----------------- */
+.lightbox-gallery-main-div .lightgallery {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.lightbox-gallery-main-div > .lightgallery > .li-div {
+    margin-bottom: 30px;
+    width: 23%;
+    display: inline-block;
+    list-style: outside none none;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+.lightbox-gallery-main-div > .lightgallery > .li-div:nth-child(4n + 1) {
+  margin-right: 10px;
+}
+.lightbox-gallery-main-div > .lightgallery > .li-div:nth-child(4n + 2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.lightbox-gallery-main-div > .lightgallery > .li-div:nth-child(4n + 3) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.lightbox-gallery-main-div > .lightgallery > .li-div:nth-child(4n + 4) {
+  margin-left: 10px;
+}
+
+.lightbox-gallery-main-div > .lightgallery > .li-div a {
+    border-radius: 5px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+}
+
+.lightbox-gallery-main-div > .lightgallery > .li-div a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.lightbox-gallery-main-div > .lightgallery > .li-div a:hover > img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.lightbox-gallery-main-div > .lightgallery > .li-div a .demo-gallery-poster {
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: background-color 0.15s ease 0s;
+    -o-transition: background-color 0.15s ease 0s;
+    transition: background-color 0.15s ease 0s;
+}
+
+.lightbox-gallery-main-div > .lightgallery > .li-div a:hover .demo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-gallery-main-div .justified-gallery > a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+
+.lightbox-gallery-main-div .justified-gallery > a:hover > img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.lightbox-gallery-main-div .justified-gallery > a .demo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: background-color 0.15s ease 0s;
+    -o-transition: background-color 0.15s ease 0s;
+    transition: background-color 0.15s ease 0s;
+}
+.lightbox-gallery-main-div .justified-gallery > a:hover .demo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.lg-outer #lg-share {
+    display: none !important;
+}
+#lg-download {
+  display: none !important;
+}
+/*----------------- lightbox-gallery css ----------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+   
+    .lightbox-gallery-main-div > .lightgallery > .li-div {
+          margin-bottom: 30px;
+          width: 100%;
+          display: inline-block;
+          margin-right: 0px;
+          margin-left: 0px;
+      }
+      .lightbox-gallery-main-div > .lightgallery > .li-div:nth-child(4n + 1) {
+          margin-right: 0px;
+      }
+      .lightbox-gallery-main-div > .lightgallery > .li-div:nth-child(4n + 2) {
+          margin-left: 0px;
+          margin-right: 0px;
+      }
+      .lightbox-gallery-main-div > .lightgallery > .li-div:nth-child(4n + 3) {
+          margin-left: 0px;
+      }
+      .lightbox-gallery-main-div > .lightgallery > .li-div:nth-child(4n + 4) {
+            margin-left: 0px;
+        }
+      
+    .lightbox-gallery-main-div > .lightgallery > .li-div a > img {
+        min-height: 230px;
+        object-fit: cover;
+        max-height: 230px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {  
+    
+    
+    .lightbox-gallery-main-div > .lightgallery > .li-div {
+      margin-bottom: 25px;
+      width: 22%;
+      display: inline-block;
+    }
+    .lightbox-gallery-main-div > .lightgallery > .li-div a > img {
+      min-height: 150px;
+        object-fit: cover;
+        max-height: 150px;
+    }
+}
+
+
+
+
+
+
+
